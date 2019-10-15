@@ -11,5 +11,16 @@
         </Console>
     </Appenders>
     <Loggers>
+        <Logger name="com.example.log4j2demo" level="fatal" additivity="false">
+            <AppenderRef ref="ConsoleAppender" />
+        </Logger>
+
+        <Logger name="com.example" level="error" additivity="false">
+            <AppenderRef ref="ConsoleAppender" />
+        </Logger>
+        
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender" />
+        </Root>
     </Loggers>
 </Configuration>
